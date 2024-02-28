@@ -1,0 +1,50 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+#my-form, #forum, #comments-container {
+    margin: 20px;
+    padding: 20px 30px;
+    border: 3px solid black;
+
+    max-width: 600px;
+}
+/* при профессиональной разработке любой класс или IDдолжен содержать тире */
+
+#forum {
+    max-width: 400px;
+
+}
+
+.forum-title {
+    font-size: 1.3em;
+}
+
+#forum .row {
+    margin-top: 12px;
+    
+    display: flex;
+    flex-direction: column;
+
+    color: gray;
+}
+
+#send-comment {
+    margin-top: 12px;
+    border-radius: 5px;
+    background-color: beige;
+}
+
+#comments-container {
+    max-width: 800px;
+}
+
+.comments-title {
+    font-size: 1.3em;
+}
+
+#empty {
+    color: gray;
+    margin-top: 16px;
+}

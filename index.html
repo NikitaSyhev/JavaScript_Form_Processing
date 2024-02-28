@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обработка формы</title>
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+    
+
+    <form action="" id="my-form">
+        <div class="row">
+            <label for="name">Имя:</label>
+            <!-- text = имя небольшой длины -->
+            <input id="name" type="text">
+        </div>
+        <div class="row">
+            <label for="email">Эл.почта</label>
+            <input id="email" type="email">
+        </div>
+        <div class="row">
+            <label for="message">Сообщение</label>
+            <!-- textarea - текст любой длины -->
+            <textarea id="message"></textarea>
+        </div>
+        <div class="row">
+            <label for="feedback">Я хочу получить ответ на мое обращение</label>
+            <input id="feedback" type="checkbox">
+        </div>
+        <button id="send-form" type="submit">Отправить</button>
+    </form>
+
+
+    <form id="forum">
+        <h3 class="forum-title">Оставить комментарий</h3>
+        <div class="row">
+            <label for="uname">Имя:</label>
+            <input id="uname" type="text">
+        </div>
+        <div class="row">
+            <label for="umessage">Комментарий:</label>
+            <textarea id="umessage"></textarea>
+        </div>
+        <button id="send-comment" type="submit">Отправить</button>
+    </form>
+
+    <div id="comments-container">
+        <h3 class="comments-title">Комментарий</h3>
+        <p id="empty">Пока никто не оставил комментарий.</p>
+    </div> 
+    <script src="scripts/index.js"></script>
+</body>
+</html>
